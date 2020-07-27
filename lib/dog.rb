@@ -1,4 +1,5 @@
 class Dog
+<<<<<<< HEAD
     attr_reader :name
     @@all = []
 
@@ -25,3 +26,25 @@ class Dog
         @@all << self
     end
 end
+=======
+
+	attr_accessor :name
+
+	@@all = []
+
+	def initialize(name)
+		@name = name
+		@@all << self
+	end
+
+	def self.clear_all
+		@@all.clear
+	end
+
+	def self.all
+		@@all.each { |dog_name| puts dog_name.name }
+	end
+
+
+end 
+>>>>>>> ddacb7136b4828fafe1c50ac006d869fbcb2e5d1
